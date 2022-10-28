@@ -1,0 +1,78 @@
+:root {
+    --sm: 1.2rem;
+    --md: 1.8rem;
+    --pink: #fcc4ff;
+    --dark-pink: #ff6ca5;
+    --white: #ffffff;
+    --black: #120907;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--pink);
+}
+body {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    width: 80%;
+    min-width: 320px;
+    max-width: 480px;
+    border-radius: 1.5rem;
+    height: auto;
+    font-size: var(--sm);
+    font-weight: 300;
+    background-color: var(--white);
+}
+.profile_info{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+}
+.profile_info h1 {
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+.profile_pic {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 0.01rem solid var(--black);
+}
+.dots {
+    position: absolute;
+    margin-top: 0.2rem;
+    right: 3%;
+    color: var(--black);
+}
+.post_pic{
+    width: 100%;
+}
+.post_desc{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+}
+.heart{
+    font-size: 3rem;
+}
+.heart:hover, .active{
+    color: var(--dark-pink);
+    font-variation-settings:
+    'FILL' 1
+}
+
